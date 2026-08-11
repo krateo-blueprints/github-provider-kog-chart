@@ -1,7 +1,7 @@
 name: release-chart
 
 # Publishes the chart to oci://ghcr.io/<owner>/charts/github-provider-kog on a SemVer tag
-# (matching Chart.yaml version) or manual dispatch — the braghettos OCI convention shared by the
+# (matching Chart.yaml version) or manual dispatch — the krateo-blueprints OCI convention shared by the
 # sibling KOG charts (hetzner-object-storage-kog, krateo-oxide-operator-kog). The installer's
 # CompositionDefinition consumes this artifact via spec.chart.url. `helm package` does not render
 # templates, so the RestDefinition/ConfigMap charts publish fine without runtime input; helm lint +
