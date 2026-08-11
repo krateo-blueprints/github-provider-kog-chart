@@ -17,7 +17,7 @@ type: application
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
 # NOTE: concrete version (not the upstream CHART_VERSION placeholder) so `helm package` and the
 # OCI release-chart workflow's tag==version guard work; publishes to oci://ghcr.io/krateo-blueprints/charts.
-version: 0.3.0
+version: CHART_VERSION
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
