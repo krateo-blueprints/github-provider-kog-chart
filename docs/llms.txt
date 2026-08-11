@@ -1,0 +1,21 @@
+# github-provider-kog — LLM doc index
+# One line per file. This KOG chart installs RestDefinitions consumed by the Krateo OASGen Provider,
+# which generates the github.ogen.krateo.io CRDs and their controllers. Read files at the tag matching
+# the running chart (chart/Chart.yaml version).
+docs/index.md: the map — what the chart is (KOG/OASGen) + links to the whole bundle and the repo layout
+docs/overview.md: the KOG/OASGen architecture, the RestDefinition-to-controller flow, the eight kinds, the proxy plugin
+docs/usage.md: prerequisites (OASGen Provider), install, wait for RestDefinitions Ready, PAT Secret + Configuration, first resource
+docs/configuration.md: the whole values.yaml surface — per-kind restdefinitions toggles, the plugin Deployment settings
+docs/api.md: the generated CRDs (eight kinds + Configuration companions), the verbs each RestDefinition wires, authentication
+docs/examples.md: index of the runnable examples
+docs/release.md: how a tag ships the chart to the krateo-blueprints charts OCI registry on GHCR
+docs/log.md: curated history
+docs/troubleshooting.md: per-kind common issues (checking RestDefinitions/CRDs/controllers, Repo/Collaborator/TeamRepo/Workflow gotchas)
+examples/manage-a-repo/README.md: end-to-end — install, Ready wait, PAT Secret + RepoConfiguration, create/update/delete a Repo
+# Source (read at the same tag; the docs above are derived from these):
+chart/Chart.yaml: chart name/version + appVersion (pins the github-rest-dynamic-controller-plugin image tag)
+chart/values.yaml: the per-kind restdefinitions toggles and the plugin Deployment values
+chart/templates/rd-repo.yaml: a representative RestDefinition — oasPath, resource kind, verbsDescription
+chart/templates/_helpers.tpl: the plugin.enabled helper (renders the plugin only for collaborator/teamrepo)
+chart/samples/test-repo.yaml: a sample Repo CR
+chart/samples/configs/sample-repo-config.yaml: a sample RepoConfiguration
