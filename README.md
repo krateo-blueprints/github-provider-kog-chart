@@ -100,7 +100,7 @@ and `templates/deployment.yaml`/`service.yaml` render the proxy plugin (gated by
 `github-provider-kog.plugin.enabled` helper in `_helpers.tpl`).
 
 Releases are cut by pushing a plain-semver tag (`X.Y.Z`, no `v` prefix) that **matches**
-`chart/Chart.yaml` `version`; `.github/workflows/release-chart.yaml` lint-tests,
+`chart/Chart.yaml` `version`; `.github/workflows/release-tag.yaml` lint-tests,
 packages and pushes the chart to `oci://ghcr.io/krateo-blueprints/charts/github-provider-kog`.
 `.github/workflows/lint.yaml` runs the shared Krateo docs-standard linter on every PR.
 Details in [docs/release.md](./docs/release.md).
