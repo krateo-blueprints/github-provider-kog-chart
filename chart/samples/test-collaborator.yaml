@@ -9,7 +9,7 @@ spec:
   configurationRef:
     name: my-collaborator-config
     namespace: default
-  owner: krateoplatformops-test
+  owner: krateo-platformops-test
   repo: collaborator-tester
   username: leonardo-vicentini
   permission: push

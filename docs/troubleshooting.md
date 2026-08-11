@@ -230,7 +230,7 @@ spec:
   configurationRef:
     name: my-workflow-config
     namespace: default
-  owner: krateoplatformops-test
+  owner: krateo-platformops-test
   repo: workflow-tester
   workflow_id: test.yaml   # Can be the workflow file name
   ref: main                # branch or tag name

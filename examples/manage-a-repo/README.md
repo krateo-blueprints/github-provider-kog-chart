@@ -21,7 +21,7 @@ The manifests referenced below are in this directory:
 
 ## Preconditions
 
-- The [Krateo OASGen Provider](https://github.com/krateoplatformops/oasgen-provider) is
+- The [Krateo OASGen Provider](https://github.com/krateo-platformops/oasgen-provider) is
   installed (see [usage](../../docs/usage.md)).
 - The chart is installed with at least the `repo` RestDefinition enabled (default):
 

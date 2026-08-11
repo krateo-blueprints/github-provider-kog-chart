@@ -10,7 +10,7 @@ timestamp: 2026-08-11T00:00:00Z
 # API
 
 This chart installs no CRDs directly. It installs `RestDefinition` resources
-(`ogen.krateo.io/v1alpha1`); the [OASGen Provider](https://github.com/krateoplatformops/oasgen-provider)
+(`ogen.krateo.io/v1alpha1`); the [OASGen Provider](https://github.com/krateo-platformops/oasgen-provider)
 reads each one's OpenAPI spec and **generates** the CRDs described here, all in the
 `github.ogen.krateo.io/v1alpha1` group/version. The checked-in copies under
 `docs/crds/` are for reference only.
@@ -129,7 +129,7 @@ spec:
   configurationRef:
     name: my-repo-config
     namespace: default
-  org: krateoplatformops-test
+  org: krateo-platformops-test
   name: test-repo
 ```
 

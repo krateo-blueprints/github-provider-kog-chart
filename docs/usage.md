@@ -11,10 +11,10 @@ timestamp: 2026-08-11T00:00:00Z
 
 ## Prerequisites
 
-The [Krateo OASGen Provider](https://github.com/krateoplatformops/oasgen-provider)
+The [Krateo OASGen Provider](https://github.com/krateo-platformops/oasgen-provider)
 must already be installed in the cluster — this chart declares `RestDefinition`
 resources that OASGen Provider consumes. Follow the
-[oasgen-provider-chart README](https://github.com/krateoplatformops/oasgen-provider-chart)
+[oasgen-provider-chart README](https://github.com/krateo-platformops/oasgen-provider-chart)
 to install it first.
 
 ## Install
@@ -119,7 +119,7 @@ spec:
   configurationRef:
     name: my-repo-config
     namespace: default
-  org: krateoplatformops-test
+  org: krateo-platformops-test
   name: test-repo
   description: A short description of the repository set by Krateo
   visibility: public

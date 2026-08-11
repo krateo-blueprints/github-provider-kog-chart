@@ -34,7 +34,7 @@ the controller footprint to only the resources you manage.
 
 ## The proxy plugin
 
-The [github-rest-dynamic-controller-plugin](https://github.com/krateoplatformops/github-rest-dynamic-controller-plugin)
+The [github-rest-dynamic-controller-plugin](https://github.com/krateo-platformops/github-rest-dynamic-controller-plugin)
 Deployment + Service is rendered **only** when a kind that needs it is enabled — the
 `github-provider-kog.plugin.enabled` helper (`_helpers.tpl`) returns `true` iff
 `restdefinitions.collaborator.enabled` or `restdefinitions.teamrepo.enabled` is set.
@@ -45,7 +45,7 @@ not rendered.
 
 | key | default | effect |
 |---|---|---|
-| `image.repository` | `ghcr.io/krateoplatformops/github-rest-dynamic-controller-plugin` | the plugin image. |
+| `image.repository` | `ghcr.io/krateo-platformops/github-rest-dynamic-controller-plugin` | the plugin image. |
 | `image.tag` | `""` | empty resolves to the chart `appVersion` (`0.0.3`). Set only to test another build. |
 | `image.pullPolicy` | `IfNotPresent` | container image pull policy. |
 | `imagePullSecrets` | `[]` | pull secrets for a private registry. |

@@ -9,7 +9,7 @@ spec:
   configurationRef:
     name: my-pullrequest-config
     namespace: default
-  owner: krateoplatformops-test
+  owner: krateo-platformops-test
   repo: test-repo
   title: "builder: page example"
   body: |

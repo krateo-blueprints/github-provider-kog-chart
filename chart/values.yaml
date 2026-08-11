@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/krateoplatformops/github-rest-dynamic-controller-plugin
+  repository: ghcr.io/krateo-platformops/github-rest-dynamic-controller-plugin
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""

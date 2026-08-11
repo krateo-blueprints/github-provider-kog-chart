@@ -2,7 +2,7 @@
 
 A Krateo **KOG** (Krateo Operator Generator) Helm chart that turns the GitHub REST API
 into Kubernetes-native Custom Resources. It installs a set of `RestDefinition` resources
-consumed by the [Krateo OASGen Provider](https://github.com/krateoplatformops/oasgen-provider),
+consumed by the [Krateo OASGen Provider](https://github.com/krateo-platformops/oasgen-provider),
 which generates the CRDs and controllers that reconcile GitHub resources — repositories,
 collaborators, team access, runner groups, workflow runs, branch refs, file commits and
 pull requests — in the `github.ogen.krateo.io` API group.
@@ -14,7 +14,7 @@ This chart carries no compiled controller. For each GitHub resource kind it decl
 slice of the [GitHub REST API OpenAPI spec](https://github.com/github/rest-api-description).
 OASGen Provider then generates a CRD in `github.ogen.krateo.io` and deploys a dedicated
 controller per kind. Two kinds (`Collaborator`, `TeamRepo`) are routed through a proxy —
-the [github-rest-dynamic-controller-plugin](https://github.com/krateoplatformops/github-rest-dynamic-controller-plugin) —
+the [github-rest-dynamic-controller-plugin](https://github.com/krateo-platformops/github-rest-dynamic-controller-plugin) —
 that smooths over GitHub REST inconsistencies; the chart deploys it only when one of
 those kinds is enabled.
 
@@ -24,7 +24,7 @@ the architecture and [docs/api.md](./docs/api.md) for each kind's verbs.
 
 ## Install
 
-Prerequisite: the [Krateo OASGen Provider](https://github.com/krateoplatformops/oasgen-provider)
+Prerequisite: the [Krateo OASGen Provider](https://github.com/krateo-platformops/oasgen-provider)
 must already be installed. Then:
 
 ```sh

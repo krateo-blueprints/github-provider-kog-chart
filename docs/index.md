@@ -12,7 +12,7 @@ timestamp: 2026-08-11T00:00:00Z
 `github-provider-kog` is a Krateo **KOG** (Krateo Operator Generator) Helm chart. It
 does not carry hand-written controllers: it installs a set of `RestDefinition`
 resources that hand the [GitHub REST API OpenAPI specification](https://github.com/github/rest-api-description)
-to the [Krateo OASGen Provider](https://github.com/krateoplatformops/oasgen-provider),
+to the [Krateo OASGen Provider](https://github.com/krateo-platformops/oasgen-provider),
 which in turn generates the CRDs and spins up the controllers that reconcile GitHub
 resources. Once installed, you manage GitHub repositories, collaborators, team access,
 runner groups, workflow runs, branch references, file commits and pull requests as
@@ -43,7 +43,7 @@ Kubernetes objects in the `github.ogen.krateo.io` API group.
     ConfigMap and referenced by the matching RestDefinition's `oasPath`.
   - `assets/<kind>.yaml` — the curated OpenAPI (OAS) fragment per kind.
   - `templates/deployment.yaml` + `templates/service.yaml` — the
-    [github-rest-dynamic-controller-plugin](https://github.com/krateoplatformops/github-rest-dynamic-controller-plugin),
+    [github-rest-dynamic-controller-plugin](https://github.com/krateo-platformops/github-rest-dynamic-controller-plugin),
     a proxy that smooths over GitHub REST inconsistencies; rendered **only** when a
     kind that needs it (`collaborator`, `teamrepo`) is enabled.
   - `samples/` — ready-to-apply example CRs; `samples/configs/` — the matching

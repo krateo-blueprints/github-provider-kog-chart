@@ -11,7 +11,7 @@ timestamp: 2026-08-11T00:00:00Z
 
 `github-provider-kog` is a **KOG** chart: it ships no compiled controller of its own.
 Instead it declares, for each GitHub resource kind, a `RestDefinition`
-(`ogen.krateo.io/v1alpha1`) that points the [Krateo OASGen Provider](https://github.com/krateoplatformops/oasgen-provider)
+(`ogen.krateo.io/v1alpha1`) that points the [Krateo OASGen Provider](https://github.com/krateo-platformops/oasgen-provider)
 at a curated slice of the GitHub REST API's OpenAPI specification. OASGen Provider
 reads that spec, generates a CRD in the `github.ogen.krateo.io` group, and deploys a
 dedicated controller that reconciles instances of that CRD against the live GitHub API.
@@ -59,7 +59,7 @@ The full verb/path table and the field-mapping rationale are in [api](./api.md).
 
 Two kinds — `Collaborator` and `TeamRepo` — do not talk to `api.github.com` directly.
 Their RestDefinition paths (e.g. `/repository/{owner}/{repo}/collaborators/{username}/permission`)
-target the [github-rest-dynamic-controller-plugin](https://github.com/krateoplatformops/github-rest-dynamic-controller-plugin),
+target the [github-rest-dynamic-controller-plugin](https://github.com/krateo-platformops/github-rest-dynamic-controller-plugin),
 a small proxy that resolves inconsistencies in the GitHub REST API (for example, the
 permission-read shape) that the generated controllers cannot express directly.
 

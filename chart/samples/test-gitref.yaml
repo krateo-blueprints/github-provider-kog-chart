@@ -9,7 +9,7 @@ spec:
   configurationRef:
     name: my-gitref-config
     namespace: default
-  owner: krateoplatformops-test
+  owner: krateo-platformops-test
   repo: test-repo
   # Plain branch name (used by the get/delete endpoints; may contain slashes).
   branch: builder/page-example
