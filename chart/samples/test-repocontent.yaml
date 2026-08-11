@@ -9,7 +9,7 @@ spec:
   configurationRef:
     name: my-repocontent-config
     namespace: default
-  owner: krateoplatformops-test
+  owner: krateo-platformops-test
   repo: test-repo
   # File path in the repository (may contain slashes).
   path: chart/templates/flex.page-example.yaml

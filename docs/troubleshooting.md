@@ -1,3 +1,12 @@
+---
+type: Architecture
+title: Troubleshooting — github-provider-kog-chart
+description: github-provider-kog-chart — troubleshooting reference.
+resource: https://github.com/krateo-blueprints/github-provider-kog-chart
+tags: [architecture, krateo-blueprints]
+timestamp: 2026-08-11T00:00:00Z
+---
+
 # Troubleshooting guide
 
 ## Summary
@@ -221,7 +230,7 @@ spec:
   configurationRef:
     name: my-workflow-config
     namespace: default
-  owner: krateoplatformops-test
+  owner: krateo-platformops-test
   repo: workflow-tester
   workflow_id: test.yaml   # Can be the workflow file name
   ref: main                # branch or tag name

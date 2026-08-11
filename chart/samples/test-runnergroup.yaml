@@ -10,7 +10,7 @@ spec:
     name: my-runnergroup-config
     namespace: default 
   name: runnergroup-test-by-krateo
-  org: krateoplatformops-test
+  org: krateo-platformops-test
   allows_public_repositories: false
   restricted_to_workflows: false
   #runners:  # List of runners IDs to add to the runner group.

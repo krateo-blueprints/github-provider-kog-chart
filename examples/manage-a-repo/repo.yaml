@@ -1,0 +1,17 @@
+apiVersion: github.ogen.krateo.io/v1alpha1
+kind: Repo
+metadata:
+  name: test-repo
+  namespace: default
+  annotations:
+    krateo.io/connector-verbose: "true"
+spec:
+  configurationRef:
+    name: my-repo-config
+    namespace: default
+  # Set this to your GitHub organization.
+  org: krateo-platformops-test
+  name: test-repo
+  description: A short description of the repository set by Krateo
+  visibility: public
+  has_issues: true

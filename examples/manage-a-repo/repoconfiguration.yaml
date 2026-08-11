@@ -1,0 +1,13 @@
+apiVersion: github.ogen.krateo.io/v1alpha1
+kind: RepoConfiguration
+metadata:
+  name: my-repo-config
+  namespace: default
+spec:
+  authentication:
+    bearer:
+      # Reference to the Secret holding the GitHub PAT.
+      tokenRef:
+        name: gh-token
+        namespace: default
+        key: token
